@@ -26,6 +26,8 @@ body{
     flex-wrap: wrap;
     width: 90%;
     justify-content: center;
+    overflow: hidden;
+    height: auto;
 }
 .titulo{
     font-weight: 300;
@@ -70,13 +72,66 @@ body{
 .hero .cta i{
     margin-right: 10px;
 }
+.wave{
+    width: 100%;
+}
+.info-wave{
+    height: auto;
+}
+.info{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background: #FDD9E7;
+    overflow: hidden;
+}
+footer{
+    height: 200px;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    width: 30%;
+    background: #fff;
+    height: auto;
+    padding: 20px 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card>img{
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.card-titulo{
+    font-size: 19px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.card-text{
+    text-align: justify;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.card .cta{
+    align-self: flex-start;
+    color: #000;
+    background: white;
+    padding: 10px 14px;
+}
 /*Responsive*/
 @media screen and (max-width:800px) {
     .titulo{
         font-size: 40px;
-    }
-    .contenedor{
-        height: 620px;
     }
     .hero-texto{
         width: 100%;
@@ -95,14 +150,15 @@ body{
         max-width: 450px;
         margin-top: 20px;
     }
+    .card{
+        margin-bottom: 20px;
+        width: 100%;
+    }
 }
 @media screen and (max-width:355px) {
     .titulo{
         font-size: 32px;
         padding: 10px 0;
-    }
-    .contenedor{
-        height: 680px;
     }
     .parrafo{
         font-size: 20px;
