@@ -48,6 +48,7 @@ body{
 }
 .links li>a{
     text-decoration: none;
+    color: #000;
 }
 .links li:hover{
     cursor: pointer;
