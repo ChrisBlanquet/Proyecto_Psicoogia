@@ -8,16 +8,67 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.img{
+    width: 100%;
+    max-width: 600px;
+}
+.hero-grid{
+    margin-top: 15px;
+    grid-template-rows: repeat(12,1fr);
+}
 .grid{
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(auto-fill,minmax(30px,1fr));
+}
+.main{
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.links{
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.links li{
+    width: 20%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links li>a{
+    text-decoration: none;
+}
+.links li:hover{
+    cursor: pointer;
+}
+.links li:hover>a{
+    text-decoration: underline;
+    color:#F5C7C8;
+}
+.main-responsive{
+    display: none;
+}
+.main .img-main{
+    max-width: 130px;
 }
 .hero{
     display: flex;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+    height: 100%;
     width: 100%;
     grid-column: 1/-1;
+    grid-row: 3/-1;
     justify-content: center;
 }
 .contenedor{
@@ -48,10 +99,6 @@ body{
 .hero-texto{
     width: 45%;
 }
-.img{
-    width: 100%;
-    max-width: 600px;
-}
 .hero .contenedor{
     justify-content: space-between;
 }
@@ -66,6 +113,7 @@ body{
 }
 .hero .cta{
     margin-top: 15px;
+    margin-left: 5px;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
@@ -130,6 +178,26 @@ footer{
 }
 /*Responsive*/
 @media screen and (max-width:800px) {
+    .main-responsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 20%;
+    }
+    .main-responsive i{
+        height: 40px;
+        width: 40px;
+        text-align: right;
+        color: #FF8DD3;
+        font-size: 30px;
+    }
+    .links{
+        display: none;
+    }
+    .links li{
+        width: 100%;
+    }
     .titulo{
         font-size: 40px;
     }
