@@ -29,6 +29,7 @@ body{
     width: 90%;
     margin: 0 auto;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .links{
     width: 60%;
@@ -61,7 +62,8 @@ body{
     display: none;
 }
 .main .img-main{
-    max-width: 130px;
+    max-width: 70px;
+    width: 30%;
 }
 .hero{
     display: flex;
@@ -189,7 +191,7 @@ footer{
     .main-responsive i{
         height: 40px;
         width: 40px;
-        text-align: right;
+        text-align: center;
         color: #FF8DD3;
         font-size: 30px;
     }
