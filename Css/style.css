@@ -271,6 +271,7 @@ footer {
         width: 20%;
     }
     .main-background{
+        padding: 15px 0px 0px 0px;
         background: rgba(255, 255, 255, 0.9);
         position: fixed;
         backdrop-filter: blur(10px);
